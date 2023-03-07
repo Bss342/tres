@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tres</title>
+</head>
+<body>
+
+    <script>
+       
+        let nombres = [];
+        let edades = [];
+        // cree dos variables con un array vacio
+
+        for (let i = 0; i < 3; i++) {
+            // luego di inicio a un bucle con una variable i con un valor de 0 este se repetira hasta que llegue a 3 ¡el i++ es para que se vaya sumando 1!
+        nombres[i] = prompt(`Ingresa el nombre de la persona ${i+1}:`);
+        edades[i] = parseInt(prompt(`Ingresa la edad de ${nombres[i]}:`));
+        }
+
+        if (edades[0] > edades[1] && edades[0] > edades[2]) {
+        alert(`${nombres[0]} tiene la mayor edad, con ${edades[0]} años.`);
+        } else if (edades[1] > edades[0] && edades[1] > edades[2]) {
+        alert(`${nombres[1]} tiene la mayor edad, con ${edades[1]} años.`);
+        } else {
+        alert(`${nombres[2]} tiene la mayor edad, con ${edades[2]} años.`);
+        }
+
+
+       
+
+    </script>
+
+</body>
+</html>
